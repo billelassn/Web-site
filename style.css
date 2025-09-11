@@ -41,6 +41,54 @@
     border: 1px solid #333;
 }
 
+/* Style pour les boutons de contact */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les boutons */
+    margin-top: 30px;
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne sur petits écrans */
+}
+
+.contact-buttons a {
+    display: inline-flex; /* Permet d'aligner l'icône et le texte */
+    align-items: center;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease; /* Animation douce au survol */
+}
+
+.contact-buttons a i {
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+    font-size: 1.2em;
+}
+
+/* Style spécifique pour le bouton LinkedIn */
+.linkedin-button {
+    background-color: #0A66C2; /* Couleur officielle LinkedIn */
+    color: #ffffff;
+    border: 1px solid #0A66C2;
+}
+
+.linkedin-button:hover {
+    background-color: #084c90; /* Couleur plus foncée au survol */
+    border-color: #084c90;
+}
+
+/* Style pour le bouton GitHub (adapté pour être similaire à un bouton) */
+.github-button {
+    background-color: #333; /* Couleur de GitHub */
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+.github-button:hover {
+    background-color: #000; /* Couleur plus foncée au survol */
+    border-color: #000;
+}
+
 .github-button:hover {
     background-color: #000; /* Couleur plus foncée au survol */
     border-color: #000;
