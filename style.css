@@ -155,3 +155,23 @@ header nav a:hover {
     background-color: #000;
     border-color: #000;
 }
+
+/* Amélioration de la mise en forme du texte dans la section "about" */
+.about-section h1 {
+    font-size: 2.5em; /* Taille du titre */
+    color: #444;    /* Couleur plus douce pour le titre */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-section p {
+    font-size: 1.1em; /* Taille de police légèrement augmentée pour les paragraphes */
+    line-height: 1.8; /* Espace entre les lignes pour une meilleure lisibilité */
+    margin-bottom: 25px; /* Espace sous chaque paragraphe */
+    color: #555;     /* Couleur des paragraphes plus douce */
+    text-align: justify; /* Aligner le texte pour un rendu plus propre */
+}
+
+.about-section p strong {
+    color: #333; /* Rendre le texte en gras plus sombre pour qu'il ressorte */
+}
