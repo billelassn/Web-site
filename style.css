@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #0056b3; /* Bleu plus foncé */
     border-bottom: 1px solid #ddd;
     padding: 20px 40px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -74,7 +74,7 @@ main {
 }
 
 .link-item a {
-    color: #007bff;
+    color: #0056b3; /* Bleu plus foncé pour les liens */
     text-decoration: none;
     font-weight: 700;
     font-size: 1.1em;
@@ -103,5 +103,5 @@ header nav a.active {
 /* Effet au survol des liens */
 header nav a:hover {
     color: #e0e0e0;
-    border-bottom: 2px solid #0056b3;
+    border-bottom: 2px solid #0056b3; /* Ajusté pour correspondre au nouveau bleu */
 }
