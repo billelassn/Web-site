@@ -92,3 +92,14 @@ footer {
     color: #999;
     font-size: 0.8em;
 }
+
+header nav a.active {
+    font-weight: 700 !important; /* Ajout de !important pour forcer le style */
+    color: #007bff !important;
+    border-bottom: 2px solid #007bff !important;
+}
+
+header nav a:hover {
+    color: #0056b3; /* Couleur légèrement plus foncée au survol */
+    border-bottom: 2px solid #0056b3;
+}
