@@ -22,7 +22,7 @@ header {
 }
 
 header a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.2em;
@@ -93,13 +93,15 @@ footer {
     font-size: 0.8em;
 }
 
+/* Règle pour la page active */
 header nav a.active {
-    font-weight: 700 !important; /* Ajout de !important pour forcer le style */
+    font-weight: 700 !important;
     color: #ffffff !important;
-    border-bottom: 2px solid #007bff !important;
+    border-bottom: 2px solid #ffffff !important;
 }
 
+/* Effet au survol des liens */
 header nav a:hover {
-    color: #e0e0e0; /* Couleur légèrement plus foncée au survol */
+    color: #e0e0e0;
     border-bottom: 2px solid #0056b3;
 }
