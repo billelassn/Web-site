@@ -53,14 +53,14 @@ main {
     font-size: 2.5em;
     font-weight: 700;
     margin-top: 10px;
-    margin-bottom: 20px; /* Ajout d'espace */
+    margin-bottom: 30px; /* Plus d'espace sous le titre principal */
 }
 
 .about-section p {
     font-size: 1.1em; /* Police légèrement plus grande */
     line-height: 1.6; /* Meilleure lisibilité */
     color: #495057; /* Couleur de texte plus douce */
-    margin-bottom: 1em; /* Espacement cohérent */
+    margin-bottom: 25px; /* Augmentation de l'espace sous chaque paragraphe */
 }
 
 /* Classe pour mettre en bleu les points importants */
@@ -164,4 +164,47 @@ header nav a:hover {
 .github-button:hover {
     background-color: #000;
     border-color: #000;
+}
+
+/* Ajustements pour les petits écrans (téléphones) */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 20px; /* Moins de padding sur les côtés */
+    }
+
+    .header-content {
+        flex-direction: column; /* Aligne les éléments en colonne */
+        align-items: flex-start; /* Aligne le tout à gauche */
+    }
+
+    header a {
+        font-size: 1.1em;
+    }
+
+    header nav {
+        margin-top: 10px; /* Espace entre le titre et la navigation */
+    }
+
+    header nav a {
+        margin-left: 0;
+        margin-right: 15px; /* Espacement horizontal entre les liens */
+        font-size: 0.9em;
+    }
+
+    .about-section h1 {
+        font-size: 2em; /* Réduction de la taille du titre */
+    }
+
+    .about-section p {
+        font-size: 1em;
+    }
+
+    .links-section {
+        flex-direction: column; /* Les liens s'empilent sur les petits écrans */
+        align-items: center;
+    }
+
+    .link-item {
+        width: 100%; /* Les liens prennent toute la largeur */
+    }
 }
