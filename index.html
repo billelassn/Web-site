@@ -1,46 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Home - Billel Aissani</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio - Billel Aissani</title>
+    <!-- Tailwind CSS pour un design moderne et responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Police Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="header-content">
-            <a href="index.html">Billel Aissani</a>
-            <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+<body class="antialiased">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
 
-    <main>
-        <section class="about-section">
-            <p>Hello, my name is Billel</p>
-            <h1>I am a passionate data scientist with a strong interest in AI applied to healthcare</h1>
-            <p>
-                Welcome to my portfolio. I invite you to explore my projects and learn more about my background.
-            </p>
-        </section>
-        
-        <section class="links-section">
-            <div class="link-item">
-               <a href="cv-billel-aissani.pdf" target="_blank">🎓 Curriculum</a>
-                <p>Discover my academic and professional journey.</p>
-            </div>
-            <div class="link-item">
-                <a href="https://github.com/billelassn" target="_blank">👾 Projects</a>
-                <p>Have a look at my personal projects on Github.</p>
-            </div>
-        </section>
-    </main>
+        <!-- En-tête -->
+        <header class="flex flex-col sm:flex-row justify-between items-center mb-12">
+            <a href="index.html" class="text-4xl font-bold text-gray-800 hover:text-blue-600 transition-colors duration-300">Billel Aissani</a>
+            <nav class="flex space-x-4 mt-4 sm:mt-0">
+                <!-- Les liens ci-dessous sont pour la navigation mais non fonctionnels dans un fichier unique -->
+                <a href="#" class="text-lg text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300 active-link">Home</a>
+                <a href="#" class="text-lg text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                <a href="#" class="text-lg text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Section principale -->
+        <main class="text-center sm:text-left">
+            <section class="bg-white p-6 md:p-10 rounded-xl shadow-lg mb-8">
+                <p class="text-xl text-gray-600 mb-2">Hello, my name is Billel</p>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+                    I am a passionate data scientist with a strong interest in AI applied to healthcare.
+                </h1>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto sm:mx-0">
+                    Welcome to my portfolio. I invite you to explore my projects and learn more about my background.
+                </p>
+            </section>
+
+            <!-- Section des liens -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Bouton Curriculum -->
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
+                    <a href="cv-billel-aissani.pdf" target="_blank" class="block w-full">
+                        <span class="text-5xl mb-4 block">🎓</span>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Curriculum</h2>
+                    </a>
+                    <p class="text-gray-600">Discover my academic and professional journey.</p>
+                </div>
+
+                <!-- Bouton Projets -->
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
+                    <a href="https://github.com/billelassn" target="_blank" class="block w-full">
+                        <span class="text-5xl mb-4 block">👾</span>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Projects</h2>
+                    </a>
+                    <p class="text-gray-600">Have a look at my personal projects on Github.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="bg-gray-800 text-gray-200 text-center py-6 mt-8">
+        <p class="text-sm">&copy; 2024 Billel Aissani. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
